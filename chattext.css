@@ -1,0 +1,17 @@
+/* Input set */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
+padding: 0px;
+
+width: 585px;
+height: 184px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;

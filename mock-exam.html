@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=585, initial-scale=1.0">
+    <title>AI Assistant - Exam Mock</title>
+    <link rel="stylesheet" href="figma2.css">
+    <link rel="stylesheet" href="chattext.css">
+    <style>
+        body {
+            margin: 32px 0 32px 0;
+            padding: 0;
+            background: #FAF9F8;
+        }
+        .ai-container {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 120px;
+            z-index: 1001;
+            width: 585px;
+            height: 849px;
+            background: #FAF9F8;
+            box-shadow: 0px 4.8px 14.4px rgba(0,0,0,0.18), 0px 25.6px 57.6px rgba(0,0,0,0.22);
+            border-radius: 8px;
+            overflow: hidden;
+            font-family: 'Segoe UI',sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        .ai-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 16px;
+            background: #FAF9F8;
+            height: 64px;
+            border-bottom: 1px solid #EDEBE9;
+        }
+        .ai-header-title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+        }
+        .ai-header-title span {
+            font-size: 24px;
+            font-weight: 600;
+            color: #323130;
+            line-height: 48px;
+        }
+        .ai-main {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 16px 0 16px;
+            overflow-y: auto;
+            min-height: 0;
+            max-height: 650px;
+        }
+        .ai-chat-area {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 0;
+        }
+        .ai-message {
+            background: #fff;
+            box-shadow: 0px 0.3px 0.9px rgba(0,0,0,0.1), 0px 1.6px 3.6px rgba(0,0,0,0.13);
+            border-radius: 8px;
+            padding: 12px 16px;
+            font-size: 14px;
+            color: #323130;
+            max-width: 80%;
+        }
+        .ai-message.user {
+            align-self: flex-end;
+            background: #C7E0F4;
+            color: #323130;
+        }
+        .ai-message.bot {
+            align-self: flex-start;
+        }
+        .ai-actions {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+        .ai-actions button {
+            background: #fff;
+            border: 1px solid #D1D1D1;
+            border-radius: 4px;
+            padding: 4px 8px;
+            font-size: 12px;
+            color: #242424;
+            cursor: pointer;
+        }
+        .ai-input-area {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px 16px 16px;
+            background: #FAF9F8;
+            border-top: 1px solid #EDEBE9;
+        }
+        .ai-input {
+            flex: 1 1 auto;
+            padding: 8px 12px;
+            border: 1px solid #D1D1D1;
+            border-radius: 8px;
+            font-size: 14px;
+            outline: none;
+        }
+        .ai-send-btn {
+            background: #0078D4;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 16px;
+            margin-left: 8px;
+            cursor: pointer;
+        }
+        .ai-action-btn {
+            background: #fff;
+            border: 1px solid #D1D1D1;
+            border-radius: 4px;
+            padding: 2px 10px;
+            font-size: 12px;
+            color: #242424;
+            cursor: pointer;
+            margin-bottom: 4px;
+            min-width: 0;
+            white-space: nowrap;
+        }
+        .ai-action-btn:hover {
+            background: #F3F2F1;
+            border-color: #0078D4;
+        }
+        .ai-message-user {
+            background: #C7E0F4;
+            color: #323130;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+            max-width: 70%;
+            align-self: flex-end;
+            margin: 4px 0 4px auto;
+            text-align: right;
+        }
+        .ai-message-bot {
+            background: #fff;
+            color: #323130;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+            max-width: 70%;
+            align-self: flex-start;
+            margin: 4px auto 4px 0;
+            text-align: left;
+            box-shadow: 0px 0.3px 0.9px rgba(0,0,0,0.1), 0px 1.6px 3.6px rgba(0,0,0,0.13);
+        }
+        #ai-messages {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Chatbot Icon -->
+    <div id="ai-chatbot-icon" style="position:fixed; bottom:32px; left:50%; transform:translateX(-50%); z-index:1000; background:#FAF9F8; width:220px; height:56px; border-radius:16px; box-shadow:0 4.8px 14.4px rgba(0,0,0,0.18), 0 25.6px 57.6px rgba(0,0,0,0.22); display:flex; align-items:center; justify-content:center; cursor:pointer; border:1px solid #EDEBE9; gap:12px;">
+        <img src="image.png" alt="Copilot Logo" style="width:32px; height:32px;">
+        <span style="font-size:18px; color:#323130; font-weight:500;">AI Assistant</span>
+    </div>
+    <!-- Chatbot Panel (hidden by default) -->
+    <div id="ai-chatbot-panel" class="ai-container" style="display:none;">
+        <!-- Header -->
+        <div class="ai-header">
+            <div class="ai-header-title">
+                <img src="image.png" alt="Copilot Logo" style="width:32px; height:32px;">
+                <span>AI Assistant <span style="font-size:14px; font-weight:400; color:#605E5C; margin-left:8px;">(Preview)</span></span>
+            </div>
+            <button id="ai-close-btn" style="background:transparent; border:none; font-size:24px; color:#323130; cursor:pointer;">&times;</button>
+        </div>
+        <!-- Date -->
+        <div style="width:100%; display:flex; justify-content:center; align-items:center; margin-top:8px; margin-bottom:0;">
+            <span style="font-size:12px; color:#605E5C;">Mon, May 14, 2023</span>
+        </div>
+        <!-- Main Chat Area -->
+        <div class="ai-main">
+            <div class="ai-chat-area" id="ai-chat-area">
+                <!-- Draft an email to approver as a right-aligned sender message -->
+                <div class="ai-message-user" style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-top:8px;">
+                    <span style="background:#C7E0F4; border-radius:8px; padding:8px 16px; font-size:14px; color:#323130; font-weight:500;">Draft an email to approver</span>
+                    <span style="font-size:12px; color:#605E5C;">2:29 PM</span>
+                </div>
+                <!-- Card -->
+                <div style="background:#fff; box-shadow:0px 0.3px 0.9px rgba(0,0,0,0.1), 0px 1.6px 3.6px rgba(0,0,0,0.13); border-radius:8px; padding:16px; margin-top:12px; width:100%; max-width:521px;">
+                    <div style="font-size:14px; color:#323130; margin-bottom:12px; line-height:20px;">
+                        <b>Customer</b> - SABIC Asia Pacific Pte Ltd<br>
+                        <b>Segment</b> - Major Commercial<br>
+                        <b>Partner Name</b> - Informatika a.d. (Serbia) Licensing Program - EA<br>
+                        <b>Engagement Type</b> - Renewal<br>
+                        <b>Enrollment #</b> - 66235506<br>
+                        <b>Opportunity ID</b> - 7-XQ64N550D<br>
+                        <b>OneAsk related case #(If Applicable)</b> -<br>
+                        <br>
+                        <b>Description</b> - Good day Mona!<br><br>
+                        This is EPS case we discussed, we have prelim positive feedback from the customer side, that they will align tender with our agreement terms - 36 months.<br><br>
+                        I would like to request from you to support.
+                    </div>
+                    <div style="display:flex; gap:8px; margin-bottom:12px;">
+                        <button style="background:#fff; border:1px solid #D1D1D1; border-radius:4px; padding:4px 12px; font-size:14px; color:#323130; display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span style="font-family:'Fabric MDL2 Assets'; font-size:16px; color:#0078D4;">&#xE8C8;</span> Edit in Outlook
+                        </button>
+                        <button style="background:#fff; border:1px solid #D1D1D1; border-radius:4px; padding:4px 12px; font-size:14px; color:#323130; display:flex; align-items:center; gap:4px; cursor:pointer;">
+                            <span style="font-family:'Fabric MDL2 Assets'; font-size:16px; color:#0078D4;">&#xE946;</span> Show enrollment details
+                        </button>
+                    </div>
+                    <div style="font-size:12px; color:#605E5C; margin-bottom:4px;">AI-generated content may be incorrect</div>
+                    <div style="font-size:12px; color:#605E5C; margin-bottom:4px; display:flex; align-items:center; gap:4px;">
+                        <span>2 references</span>
+                        <span style="font-size:16px; color:#616161; margin-left:4px;">&#xE70D;</span>
+                    </div>
+                    <div style="display:flex; flex-direction:column; gap:4px; margin-bottom:12px;">
+                        <div style="background:#EDEBE9; border-radius:4px; padding:4px 6px; font-size:12px; color:#605E5C; display:flex; align-items:center; gap:8px;">
+                            <span style="font-family:'Fabric MDL2 Assets'; font-size:16px; color:#B4009E;">&#xE8A5;</span> Expiring agreement - <a href="#" style="color:#0078D4; text-decoration:none;">3563277</a>
+                        </div>
+                        <div style="background:#EDEBE9; border-radius:4px; padding:4px 6px; font-size:12px; color:#605E5C; display:flex; align-items:center; gap:8px;">
+                            <span style="font-family:'Fabric MDL2 Assets'; font-size:16px; color:#605E5C;">&#xE715;</span> Email from Mona Kane
+                        </div>
+                    </div>
+                    <div style="display:flex; gap:4px; margin-bottom:12px; flex-wrap:wrap;">
+                        <button class="ai-action-btn" onclick="aiQuickReply('Suggestion')">Suggestion</button>
+                        <button class="ai-action-btn" onclick="aiQuickReply('Summarize agreement')">Summarize agreement</button>
+                        <button class="ai-action-btn" onclick="aiQuickReply('Find special pricing')">Find special pricing</button>
+                        <button class="ai-action-btn" onclick="aiQuickReply('Look for amendments')">Look for amendments</button>
+                        <button class="ai-action-btn" onclick="aiQuickReply('Show revenue details')">Show revenue details</button>
+                        <button class="ai-action-btn" onclick="aiQuickReply('Explain current licensing position')">Explain current licensing position</button>
+                    </div>
+                    <div id="ai-messages"></div>
+                    <div style="margin-top:8px; display:flex; align-items:center;">
+                        <input id="ai-input" type="text" placeholder="Ask copilot and mention the agreement number, or concession ID in your question" maxlength="2000" style="width:calc(100% - 40px); padding:8px 12px; border:1px solid #D1D1D1; border-radius:8px; font-size:14px;">
+                        <button id="ai-send-btn" style="background:#0078D4; color:#fff; border:none; border-radius:8px; padding:8px 16px; font-size:16px; margin-left:8px; cursor:pointer;">&#xE72A;</button>
+                    </div>
+                    <div style="font-size:10px; color:#605E5C; margin-top:8px;">AI-generated content can have mistakes, so don't forget to make sure it's accurate and appropriate.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .ai-action-btn {
+            background: #fff;
+            border: 1px solid #D1D1D1;
+            border-radius: 4px;
+            padding: 2px 10px;
+            font-size: 12px;
+            color: #242424;
+            cursor: pointer;
+            margin-bottom: 4px;
+            min-width: 0;
+            white-space: nowrap;
+        }
+        .ai-action-btn:hover {
+            background: #F3F2F1;
+            border-color: #0078D4;
+        }
+        .ai-message-user {
+            background: #C7E0F4;
+            color: #323130;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+            max-width: 70%;
+            align-self: flex-end;
+            margin: 4px 0 4px auto;
+            text-align: right;
+        }
+        .ai-message-bot {
+            background: #fff;
+            color: #323130;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 14px;
+            max-width: 70%;
+            align-self: flex-start;
+            margin: 4px auto 4px 0;
+            text-align: left;
+            box-shadow: 0px 0.3px 0.9px rgba(0,0,0,0.1), 0px 1.6px 3.6px rgba(0,0,0,0.13);
+        }
+        #ai-messages {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            margin: 8px 0;
+        }
+    </style>
+    <script>
+        // Hardcoded bot responses for demo
+        const botResponses = {
+            'suggestion': 'Here is a suggestion: Please ensure all agreement terms are clearly communicated to the customer.',
+            'summarize agreement': 'The agreement is for 36 months renewal with positive customer feedback.',
+            'find special pricing': 'Special pricing is not available for this segment at the moment.',
+            'look for amendments': 'No amendments found for this agreement.',
+            'show revenue details': 'Revenue details are available in the enrollment summary.',
+            'explain current licensing position': 'The current licensing position is aligned with the customer’s requirements.',
+            'default': 'Thank you for your message. I will get back to you soon!'
+        };
+        function addMessage(text, sender) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = sender === 'user' ? 'ai-message-user' : 'ai-message-bot';
+            msgDiv.textContent = text;
+            document.getElementById('ai-messages').appendChild(msgDiv);
+            document.getElementById('ai-messages').scrollTop = document.getElementById('ai-messages').scrollHeight;
+        }
+        function aiSendMessage(event) {
+            if(event) event.preventDefault();
+            const input = document.getElementById('ai-input');
+            const userMsg = input.value.trim();
+            if (!userMsg) return false;
+            addMessage(userMsg, 'user');
+            setTimeout(() => {
+                const key = userMsg.toLowerCase().replace(/[^a-z ]/g, '').trim();
+                addMessage(botResponses[key] || botResponses['default'], 'bot');
+            }, 500);
+            input.value = '';
+            return false;
+        }
+        function aiQuickReply(text) {
+            addMessage(text, 'user');
+            setTimeout(() => {
+                const key = text.toLowerCase().replace(/[^a-z ]/g, '').trim();
+                addMessage(botResponses[key] || botResponses['default'], 'bot');
+            }, 500);
+        }
+        document.getElementById('ai-send-btn').onclick = aiSendMessage;
+        document.getElementById('ai-input').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') aiSendMessage(e);
+        });
+        // Show/hide chatbot panel
+        document.getElementById('ai-chatbot-icon').onclick = function() {
+            document.getElementById('ai-chatbot-panel').style.display = 'flex';
+            document.getElementById('ai-chatbot-icon').style.display = 'none';
+        };
+        document.getElementById('ai-close-btn').onclick = function() {
+            document.getElementById('ai-chatbot-panel').style.display = 'none';
+            document.getElementById('ai-chatbot-icon').style.display = 'flex';
+        };
+    </script>
+</body>
+</html>

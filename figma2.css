@@ -1,0 +1,3182 @@
+/* Sidecar */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 585px;
+height: 849px;
+left: 69px;
+top: 52px;
+
+/* Neutrals / Gray 10 */
+background: #FAF9F8;
+/* Depth 64 - Panels, Popup Dialogs */
+box-shadow: 0px 4.8px 14.4px rgba(0, 0, 0, 0.18), 0px 25.6px 57.6px rgba(0, 0, 0, 0.22);
+
+
+/* Sidecar header */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 8px 16px;
+gap: 176px;
+
+width: 585px;
+height: 64px;
+
+/* Neutrals / Gray 10 */
+background: #FAF9F8;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Title + Preview label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+margin: 0 auto;
+width: 227px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Copilot Iconography */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 2px;
+gap: 10px;
+
+width: 32px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* CopilotForAzure 1 */
+
+width: 28px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 45.16%;
+right: 14.15%;
+top: 9.38%;
+bottom: 57.88%;
+
+background: radial-gradient(62.32% 81.61% at 85.44% 100.65%, #0078D4 9.56%, #0C709B 71.53%, #0A5079 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.25%;
+right: 45.21%;
+top: 57.77%;
+bottom: 9.38%;
+
+background: radial-gradient(58.96% 69.63% at 18.14% 32.93%, #0091EB 0%, #2764E7 52.35%, #0636C3 92.34%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+
+/* Vector */
+
+position: absolute;
+left: 3.12%;
+right: 38.28%;
+top: 9.38%;
+bottom: 29.68%;
+
+background: linear-gradient(170.81deg, #00A5D9 31.3%, #21CAB2 66.11%, #6ADC90 92.99%);
+
+
+/* Vector */
+
+position: absolute;
+left: 3.12%;
+right: 38.28%;
+top: 9.38%;
+bottom: 29.68%;
+
+background: linear-gradient(177.64deg, #10C9EC 1.8%, rgba(1, 174, 228, 0) 17.84%);
+
+
+/* Vector */
+
+position: absolute;
+left: 38.27%;
+right: 3.12%;
+top: 29.67%;
+bottom: 9.38%;
+
+background: radial-gradient(155.15% 123.45% at 82.99% -9.79%, #2771D8 15.44%, #14B1FF 67.89%, #16BFDF 93.11%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+
+/* Vector */
+
+position: absolute;
+left: 38.27%;
+right: 3.12%;
+top: 29.67%;
+bottom: 9.38%;
+
+background: linear-gradient(189.08deg, #14B1FF 0.46%, rgba(41, 118, 219, 0) 22.69%);
+
+
+/* Title */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 187px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Copilot (Preview) */
+
+width: 187px;
+height: 48px;
+
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 48px;
+/* identical to box height, or 200% */
+
+/* Type / Primary (Grey 160) */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Build Label */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 6px;
+gap: 10px;
+
+display: none;
+width: 54px;
+height: 16px;
+
+/* Neutrals / Gray 30 */
+background: #EDEBE9;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Copilot actions */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+margin: 0 auto;
+width: 32px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Expand */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 8px;
+gap: 10px;
+
+display: none;
+width: 32px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+display: none;
+width: 32px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Close */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px;
+gap: 10px;
+
+width: 32px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Vector */
+
+width: 12px;
+height: 12px;
+
+/* Type / Primary (Grey 160) */
+background: #323130;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* QnA area */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 12px;
+isolation: isolate;
+
+width: 585px;
+height: 601px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Scroll */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 8px 16px;
+gap: 12px;
+
+position: absolute;
+width: 585px;
+height: 556px;
+left: 0px;
+bottom: 0px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Date 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+
+width: 553px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Mon, May 14, 2023 */
+
+width: 102px;
+height: 16px;
+
+/* Fluent Regular - PC / 12 */
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* First run experience */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 12px 16px 24px;
+gap: 4px;
+
+display: none;
+width: 553px;
+height: 472px;
+
+/* Light/Background/Background 1
+
+Background 1
+(BG 1)
+
+- Light theme
+- Primary surface
+- White #FFFFFF
+*/
+background: #FFFFFF;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* QnA 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 553px;
+height: 512px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* User input */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px 0px 0px 48px;
+gap: 106px;
+
+width: 553px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Prompt */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: flex-end;
+padding: 8px 12px;
+gap: 8px;
+
+width: 232px;
+height: 36px;
+
+/* COM / COM Tint 20 #C7E0F4 */
+background: #C7E0F4;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* String body */
+
+width: 164px;
+height: 20px;
+
+/* Fluent Regular - PC / 14 */
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Type / Primary (Grey 160) */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Time stamp */
+
+width: 36px;
+height: 12px;
+
+/* SegoeUI Regular / 10 - ms-fontSize-10 FontSizes.size10
+
+React variable: FontSizes.size10
+..............................................
+Limited usage, metadata, use in places where text is mandatory and space is tight.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height, or 120% */
+text-align: right;
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Output loader */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+display: none;
+width: 553px;
+height: 88px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Streaming */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+display: none;
+width: 553px;
+height: 84px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Output card */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 12px 16px;
+gap: 4px;
+isolation: isolate;
+
+width: 553px;
+height: 464px;
+
+/* Light/Background/Background 1
+
+Background 1
+(BG 1)
+
+- Light theme
+- Primary surface
+- White #FFFFFF
+*/
+background: #FFFFFF;
+/* Depth 4 - Card Rest */
+box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1), 0px 1.6px 3.6px rgba(0, 0, 0, 0.13);
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 521px;
+height: 316px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Response */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 521px;
+height: 280px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Body */
+
+width: 521px;
+height: 280px;
+
+/* Fluent Regular - PC / 14 */
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+/* Type / Primary (Grey 160) */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Actions */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 521px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Button - icon */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 120px;
+height: 24px;
+
+/* Light/Background/Background 1
+
+Background 1
+(BG 1)
+
+- Light theme
+- Primary surface
+- White #FFFFFF
+*/
+background: #FFFFFF;
+/* Light/Stroke/Stroke 1
+
+Stroke 1
+(SK 1)
+
+- Light theme
+- Grey 82 #D1D1D1
+*/
+border: 1px solid #D1D1D1;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* .ButtonBase */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 8px;
+gap: 4px;
+
+width: 120px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* String-icon */
+
+width: 20px;
+height: 20px;
+
+/* Fluent Icons - PC / 16 */
+font-family: 'Fabric MDL2 Assets';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* or 16px */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Comm Blue / Primary  #0078D4 */
+color: #0078D4;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text wrapper for offset */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 0px 2px;
+
+width: 80px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 80px;
+height: 16px;
+
+/* Web/Caption 1
+
+Caption
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Light/Foreground/Foreground 1 */
+color: #242424;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button - icon */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 168px;
+height: 24px;
+
+/* Light/Background/Background 1
+
+Background 1
+(BG 1)
+
+- Light theme
+- Primary surface
+- White #FFFFFF
+*/
+background: #FFFFFF;
+/* Light/Stroke/Stroke 1
+
+Stroke 1
+(SK 1)
+
+- Light theme
+- Grey 82 #D1D1D1
+*/
+border: 1px solid #D1D1D1;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* .ButtonBase */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 8px;
+gap: 4px;
+
+width: 168px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* String-icon */
+
+width: 20px;
+height: 20px;
+
+/* Fluent Icons - PC / 16 */
+font-family: 'Fabric MDL2 Assets';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* or 16px */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Comm Blue / Primary  #0078D4 */
+color: #0078D4;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text wrapper for offset */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 0px 2px;
+
+width: 128px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 128px;
+height: 16px;
+
+/* Web/Caption 1
+
+Caption
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Light/Foreground/Foreground 1 */
+color: #242424;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Button - no icon */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+display: none;
+width: 117px;
+height: 24px;
+
+/* Light/Background/Background 1
+
+Background 1
+(BG 1)
+
+- Light theme
+- Primary surface
+- White #FFFFFF
+*/
+background: #FFFFFF;
+/* Light/Stroke/Stroke 1
+
+Stroke 1
+(SK 1)
+
+- Light theme
+- Grey 82 #D1D1D1
+*/
+border: 1px solid #D1D1D1;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Button - no icon */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+display: none;
+width: 158px;
+height: 24px;
+
+/* Light/Background/Background 1
+
+Background 1
+(BG 1)
+
+- Light theme
+- Primary surface
+- White #FFFFFF
+*/
+background: #FFFFFF;
+/* Light/Stroke/Stroke 1
+
+Stroke 1
+(SK 1)
+
+- Light theme
+- Grey 82 #D1D1D1
+*/
+border: 1px solid #D1D1D1;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Disclaimer + feedback */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 48px;
+
+width: 521px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Disclaimer */
+
+margin: 0 auto;
+width: 172px;
+height: 14px;
+
+/* Web/Caption 2
+
+Metadata (limited)
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height, or 140% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Feedback icons */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+margin: 0 auto;
+width: 88px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Thumb up */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px;
+gap: 10px;
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/*  */
+
+width: 16px;
+height: 16px;
+
+/* Fluent Icons - PC / 16 */
+font-family: 'Fabric MDL2 Assets';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Thumb up */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px;
+gap: 10px;
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/*  */
+
+width: 16px;
+height: 16px;
+
+/* Fluent Icons - PC / 16 */
+font-family: 'Fabric MDL2 Assets';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Thumb down */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px;
+gap: 10px;
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/*  */
+
+width: 16px;
+height: 16px;
+
+/* Fluent Icons - PC / 16 */
+font-family: 'Fabric MDL2 Assets';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* References and time */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 521px;
+height: 92px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+z-index: 2;
+
+
+/* Reference */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 521px;
+height: 92px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Accordion header */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 400px;
+
+width: 521px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* # references */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 78px;
+height: 24px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text offset */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px 0px 2px;
+
+width: 54px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text */
+
+width: 54px;
+height: 14px;
+
+/* Web/Caption 2
+
+Metadata (limited)
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+/* identical to box height, or 140% */
+display: flex;
+align-items: center;
+
+/* Light/Foreground/Foreground 3 */
+color: #616161;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Left */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Left chevron
+
+Keyword: fluent-icon;
+Metaphor: arrow, dropdown, direction, expand, contract;
+
+Used in dropdown &amp; expanding contracting scenarios. Contains directional variants.
+*/
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Shape */
+
+position: absolute;
+width: 10px;
+height: 5.5px;
+left: calc(50% - 10px/2);
+top: calc(50% - 5.5px/2 - 0.25px);
+
+/* Light/Foreground/Foreground 3
+
+Foreground 3
+(FG 3)
+
+- Light theme
+- Tertiary foreground color
+- Grey 38 #616161
+*/
+background: #616161;
+
+
+/* Date */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 42px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Body */
+
+width: 42px;
+height: 12px;
+
+/* SegoeUI Regular / 10 - ms-fontSize-10 FontSizes.size10
+
+React variable: FontSizes.size10
+..............................................
+Limited usage, metadata, use in places where text is mandatory and space is tight.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height, or 120% */
+text-align: right;
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* References */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+isolation: isolate;
+
+width: 521px;
+height: 64px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Reference */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px 6px;
+gap: 4px;
+
+width: 521px;
+height: 28px;
+
+/* Dividers & Borders / Body Divider (Grey 30) */
+border: 1px solid #EDEBE9;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+z-index: 4;
+
+
+/* Ref header */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+width: 509px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* .Citation base
+
+Citation base
+*/
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+display: none;
+width: 14px;
+height: 14px;
+
+/* Light/Stroke/Stroke 2
+
+Stroke 2
+(SK 2)
+
+- Light theme
+- Grey 88 #E0E0E0
+*/
+border: 1px solid #E0E0E0;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ref info + Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+width: 509px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Frame 2018775922 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 2px;
+gap: 10px;
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/*  */
+
+width: 16px;
+height: 16px;
+
+/* Fluent Icons - PC / 16 */
+font-family: 'Fabric MDL2 Assets';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+
+/* Accent / magenta #b4009e */
+color: #B4009E;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ref info */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 483px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Ref name */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 483px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Title */
+
+width: 483px;
+height: 16px;
+
+/* Fluent Regular - PC / 12 */
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Buttons */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+display: none;
+width: 48px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Ref details */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+display: none;
+width: 509px;
+height: 54px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Reference */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px 6px;
+gap: 4px;
+
+width: 521px;
+height: 28px;
+
+/* Dividers & Borders / Body Divider (Grey 30) */
+border: 1px solid #EDEBE9;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+z-index: 3;
+
+
+/* Ref header */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+width: 509px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* .Citation base
+
+Citation base
+*/
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+display: none;
+width: 14px;
+height: 14px;
+
+/* Light/Stroke/Stroke 2
+
+Stroke 2
+(SK 2)
+
+- Light theme
+- Grey 88 #E0E0E0
+*/
+border: 1px solid #E0E0E0;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ref info + Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+width: 509px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Frame 2018775922 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 2px;
+gap: 10px;
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/*  */
+
+width: 16px;
+height: 16px;
+
+/* Fluent Icons - PC / 16 */
+font-family: 'Fabric MDL2 Assets';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ref info */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 483px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Ref name */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+width: 483px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Title */
+
+width: 483px;
+height: 16px;
+
+/* Fluent Regular - PC / 12 */
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Buttons */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+display: none;
+width: 48px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Ref details */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+display: none;
+width: 264px;
+height: 70px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Reference */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 4px 6px;
+gap: 4px;
+
+display: none;
+width: 276px;
+height: 28px;
+
+/* Light/Stroke/Stroke 1
+
+Stroke 1
+(SK 1)
+
+- Light theme
+- Grey 82 #D1D1D1
+*/
+border: 1px solid #D1D1D1;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+z-index: 2;
+
+
+/* Reference */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 6px;
+gap: 4px;
+
+display: none;
+width: 276px;
+height: 28px;
+
+/* Light/Stroke/Stroke 1
+
+Stroke 1
+(SK 1)
+
+- Light theme
+- Grey 82 #D1D1D1
+*/
+border: 1px solid #D1D1D1;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Reference
+
+Reference
+*/
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 6px;
+gap: 4px;
+
+display: none;
+width: 264px;
+height: 32px;
+
+/* Light/Stroke/Stroke 1
+
+Stroke 1
+(SK 1)
+
+- Light theme
+- Grey 82 #D1D1D1
+*/
+border: 1px solid #D1D1D1;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Flair */
+
+box-sizing: border-box;
+
+position: absolute;
+display: none;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+
+
+/* QnA 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+display: none;
+width: 553px;
+height: 512px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Date 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+
+display: none;
+width: 553px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* QnA 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+display: none;
+width: 553px;
+height: 512px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* QnA 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+display: none;
+width: 553px;
+height: 512px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* Input set */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
+padding: 0px;
+
+width: 585px;
+height: 184px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Prompts */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 16px;
+
+width: 585px;
+height: 144px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Suggestion stack */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: flex-end;
+padding: 8px 0px;
+gap: 8px;
+
+width: 553px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Top row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 553px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Suggestion tags */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 3px 8px 5px;
+gap: 10px;
+
+width: 76px;
+height: 24px;
+
+/* Word / Word tint 30 #AEC6EB */
+border: 1px solid #AEC6EB;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Summarize agreement */
+
+width: 60px;
+height: 16px;
+
+/* SegoeUI Regular / 12 - ms-fontSize-12 FontSizes.size12
+
+React variable: FontSizes.size12
+..............................................
+Metadata in file lists and grid views, denotes any activity on items (number of views, shares or @mentions, timestamps), sharing permissions, persona names and in tooltips.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Type / Primary (Grey 160) */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Suggestion tags */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 3px 8px 5px;
+gap: 10px;
+
+width: 136px;
+height: 24px;
+
+/* Word / Word tint 30 #AEC6EB */
+border: 1px solid #AEC6EB;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Summarize agreement */
+
+width: 120px;
+height: 16px;
+
+/* SegoeUI Regular / 12 - ms-fontSize-12 FontSizes.size12
+
+React variable: FontSizes.size12
+..............................................
+Metadata in file lists and grid views, denotes any activity on items (number of views, shares or @mentions, timestamps), sharing permissions, persona names and in tooltips.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Type / Primary (Grey 160) */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Suggestion tags */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 3px 8px 5px;
+gap: 10px;
+
+width: 118px;
+height: 24px;
+
+/* Word / Word tint 30 #AEC6EB */
+border: 1px solid #AEC6EB;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Summarize agreement */
+
+width: 102px;
+height: 16px;
+
+/* SegoeUI Regular / 12 - ms-fontSize-12 FontSizes.size12
+
+React variable: FontSizes.size12
+..............................................
+Metadata in file lists and grid views, denotes any activity on items (number of views, shares or @mentions, timestamps), sharing permissions, persona names and in tooltips.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Type / Primary (Grey 160) */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Bottom row */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 553px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Suggestion tags */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 3px 8px 5px;
+gap: 10px;
+
+width: 133px;
+height: 24px;
+
+/* Word / Word tint 30 #AEC6EB */
+border: 1px solid #AEC6EB;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Summarize agreement */
+
+width: 117px;
+height: 16px;
+
+/* SegoeUI Regular / 12 - ms-fontSize-12 FontSizes.size12
+
+React variable: FontSizes.size12
+..............................................
+Metadata in file lists and grid views, denotes any activity on items (number of views, shares or @mentions, timestamps), sharing permissions, persona names and in tooltips.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Type / Primary (Grey 160) */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Suggestion tags */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 3px 8px 5px;
+gap: 10px;
+
+width: 129px;
+height: 24px;
+
+/* Word / Word tint 30 #AEC6EB */
+border: 1px solid #AEC6EB;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Summarize agreement */
+
+width: 113px;
+height: 16px;
+
+/* SegoeUI Regular / 12 - ms-fontSize-12 FontSizes.size12
+
+React variable: FontSizes.size12
+..............................................
+Metadata in file lists and grid views, denotes any activity on items (number of views, shares or @mentions, timestamps), sharing permissions, persona names and in tooltips.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Type / Primary (Grey 160) */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Suggestion tags */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 3px 8px 5px;
+gap: 10px;
+
+width: 191px;
+height: 24px;
+
+/* Word / Word tint 30 #AEC6EB */
+border: 1px solid #AEC6EB;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Summarize agreement */
+
+width: 175px;
+height: 16px;
+
+/* SegoeUI Regular / 12 - ms-fontSize-12 FontSizes.size12
+
+React variable: FontSizes.size12
+..............................................
+Metadata in file lists and grid views, denotes any activity on items (number of views, shares or @mentions, timestamps), sharing permissions, persona names and in tooltips.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height, or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Type / Primary (Grey 160) */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Shuffle button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 6px;
+gap: 10px;
+
+width: 24px;
+height: 24px;
+
+/* Word / Word tint 30 #AEC6EB */
+border: 1px solid #AEC6EB;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 12px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 1.81%;
+top: 13.43%;
+bottom: 13.43%;
+
+/* Type / Primary (Grey 160) */
+background: #323130;
+
+
+/* Chat Text area */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 12px 12px 4px;
+gap: 4px;
+
+width: 553px;
+height: 72px;
+
+/* Light/Background/Background 1
+
+Background 1
+(BG 1)
+
+- Light theme
+- Primary surface
+- White #FFFFFF
+*/
+background: #FFFFFF;
+/* Light/Stroke/Stroke 1 Selected
+
+Stroke 1 Selected
+(SK 1 Selected)
+
+- Light theme
+- Grey 74 #BDBDBD
+*/
+border: 1px solid #BDBDBD;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Input */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 529px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ask copilot and mention the agreement number, or concession ID in your question */
+
+width: 512px;
+height: 20px;
+
+/* Fluent Regular - PC / 14 */
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Footer */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 2px;
+
+width: 529px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Input Actions */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+width: 529px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Left side */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+margin: 0 auto;
+width: 39px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Count */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 4px;
+gap: 5px;
+
+width: 39px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 0/2000 */
+
+width: 31px;
+height: 12px;
+
+/* SegoeUI Regular / 10 - ms-fontSize-10 FontSizes.size10
+
+React variable: FontSizes.size10
+..............................................
+Limited usage, metadata, use in places where text is mandatory and space is tight.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height, or 120% */
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Actions */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+display: none;
+width: 32px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Send */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 6px;
+gap: 10px;
+
+margin: 0 auto;
+width: 32px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/*  */
+
+width: 20px;
+height: 20px;
+
+/* Fluent Icons - PC / 20 */
+font-family: 'Fabric MDL2 Assets';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+/* identical to box height, or 20px */
+
+/* Type / Primary (Grey 160) */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Footer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 4px 16px;
+
+width: 585px;
+height: 40px;
+
+/* Neutrals / Gray 10 */
+background: #FAF9F8;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2018775953 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 4px;
+
+margin: 0 auto;
+width: 190px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Text-Icon / -Text-Icon
+
+Fabric component: CommandBarButton
+...............................................
+Component props: IconProps
+*/
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 8px;
+gap: 8px;
+
+width: 100px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* String-icon */
+
+width: 16px;
+height: 16px;
+
+/* FabricMDL / 16
+
+16px icon
+No calss in Fabric, this is for design convience only
+*/
+font-family: 'Fabric MDL2 Assets';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+/* identical to box height, or 16px */
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Comm Blue / Primary  #0078D4 */
+color: #0078D4;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* String-button */
+
+width: 60px;
+height: 20px;
+
+/* SegoeUI Regular / 14 - ms-fontSize-14 FontSizes.size14
+
+React variable: FontSizes.size14
+..............................................
+Commands and controls (left nav, Team’s channels, command bar, checkbox, dropdown menu, toggle, radio button, button text and links), in file or document titles and as body text.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+display: flex;
+align-items: flex-end;
+
+/* Neutrals/Web/Gray 160  #323130 */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text-Icon / -Text-Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 6px 8px;
+gap: 8px;
+
+width: 86px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+width: 16px;
+height: 12px;
+left: calc(50% - 16px/2);
+top: calc(50% - 12px/2 - 0px);
+
+/* COM / COM primary #0078D4 */
+background: #0078D4;
+
+
+/* String-button */
+
+width: 46px;
+height: 20px;
+
+/* SegoeUI Regular / 14 - ms-fontSize-14 FontSizes.size14
+
+React variable: FontSizes.size14
+..............................................
+Commands and controls (left nav, Team’s channels, command bar, checkbox, dropdown menu, toggle, radio button, button text and links), in file or document titles and as body text.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+display: flex;
+align-items: flex-end;
+
+/* Neutrals/Web/Gray 160  #323130 */
+color: #323130;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Disclaimer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 257px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* AI-generated content can have mistakes, so don’t forget to make sure it’s accurate and appropriate. */
+
+width: 257px;
+height: 24px;
+
+/* SegoeUI Regular / 10 - ms-fontSize-10 FontSizes.size10
+
+React variable: FontSizes.size10
+..............................................
+Limited usage, metadata, use in places where text is mandatory and space is tight.
+*/
+font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* or 120% */
+text-align: right;
+
+/* Type / Secondary (Grey 130) */
+color: #605E5C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
