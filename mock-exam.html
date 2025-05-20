@@ -186,6 +186,18 @@
             gap: 4px;
             margin: 8px 0;
         }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .ai-loader {
+            border: 2px solid #C7E0F4;
+            border-top: 2px solid #0078D4;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+        }
     </style>
 </head>
 <body>
@@ -211,68 +223,16 @@
         <!-- Main Chat Area -->
         <div class="ai-main">
             <div class="ai-chat-area" id="ai-chat-area">
-                <!-- Draft an email to approver as a right-aligned sender message -->
-                <div class="ai-message-user" style="display:flex; align-items:center; justify-content:flex-end; gap:8px; margin-top:8px;">
-                    <span style="background:#C7E0F4; border-radius:8px; padding:8px 16px; font-size:14px; color:#323130; font-weight:500;">Draft an email to approver</span>
-                    <span style="font-size:12px; color:#605E5C;">2:29 PM</span>
-                </div>
-                <!-- Card -->
-                <div style="background:#fff; box-shadow:0px 0.3px 0.9px rgba(0,0,0,0.1), 0px 1.6px 3.6px rgba(0,0,0,0.13); border-radius:8px; padding:16px; margin-top:12px; width:100%; max-width:521px;">
-                    <div style="font-size:14px; color:#323130; margin-bottom:12px; line-height:20px;">
-                        <b>Customer</b> - SABIC Asia Pacific Pte Ltd<br>
-                        <b>Segment</b> - Major Commercial<br>
-                        <b>Partner Name</b> - Informatika a.d. (Serbia) Licensing Program - EA<br>
-                        <b>Engagement Type</b> - Renewal<br>
-                        <b>Enrollment #</b> - 66235506<br>
-                        <b>Opportunity ID</b> - 7-XQ64N550D<br>
-                        <b>OneAsk related case #(If Applicable)</b> -<br>
-                        <br>
-                        <b>Description</b> - Good day Mona!<br><br>
-                        This is EPS case we discussed, we have prelim positive feedback from the customer side, that they will align tender with our agreement terms - 36 months.<br><br>
-                        I would like to request from you to support.
-                    </div>
-                    <div style="display:flex; gap:8px; margin-bottom:12px;">
-                        <button style="background:#fff; border:1px solid #D1D1D1; border-radius:4px; padding:4px 12px; font-size:14px; color:#323130; display:flex; align-items:center; gap:4px; cursor:pointer;">
-                            <span style="font-family:'Fabric MDL2 Assets'; font-size:16px; color:#0078D4;">&#xE8C8;</span> Edit in Outlook
-                        </button>
-                        <button style="background:#fff; border:1px solid #D1D1D1; border-radius:4px; padding:4px 12px; font-size:14px; color:#323130; display:flex; align-items:center; gap:4px; cursor:pointer;">
-                            <span style="font-family:'Fabric MDL2 Assets'; font-size:16px; color:#0078D4;">&#xE946;</span> Show enrollment details
-                        </button>
-                    </div>
-                    <div style="font-size:12px; color:#605E5C; margin-bottom:4px;">AI-generated content may be incorrect</div>
-                    <div style="font-size:12px; color:#605E5C; margin-bottom:4px; display:flex; align-items:center; gap:4px;">
-                        <span>2 references</span>
-                        <span style="font-size:16px; color:#616161; margin-left:4px;">&#xE70D;</span>
-                    </div>
-                    <div style="display:flex; flex-direction:column; gap:4px; margin-bottom:12px;">
-                        <div style="background:#EDEBE9; border-radius:4px; padding:4px 6px; font-size:12px; color:#605E5C; display:flex; align-items:center; gap:8px;">
-                            <span style="font-family:'Fabric MDL2 Assets'; font-size:16px; color:#B4009E;">&#xE8A5;</span> Expiring agreement - <a href="#" style="color:#0078D4; text-decoration:none;">3563277</a>
-                        </div>
-                        <div style="background:#EDEBE9; border-radius:4px; padding:4px 6px; font-size:12px; color:#605E5C; display:flex; align-items:center; gap:8px;">
-                            <span style="font-family:'Fabric MDL2 Assets'; font-size:16px; color:#605E5C;">&#xE715;</span> Email from Mona Kane
-                        </div>
-                    </div>
-                    <div style="display:flex; gap:4px; margin-bottom:12px; flex-wrap:wrap;">
-                        <button class="ai-action-btn" onclick="aiQuickReply('Suggestion')">Suggestion</button>
-                        <button class="ai-action-btn" onclick="aiQuickReply('Summarize agreement')">Summarize agreement</button>
-                        <button class="ai-action-btn" onclick="aiQuickReply('Find special pricing')">Find special pricing</button>
-                        <button class="ai-action-btn" onclick="aiQuickReply('Look for amendments')">Look for amendments</button>
-                        <button class="ai-action-btn" onclick="aiQuickReply('Show revenue details')">Show revenue details</button>
-                        <button class="ai-action-btn" onclick="aiQuickReply('Explain current licensing position')">Explain current licensing position</button>
-                    </div>
-                    <div style="display:flex; flex-direction:column; flex:1 1 auto; min-height:0;">
-                        <div id="ai-messages" style="flex:1 1 auto; min-height:0; max-height:none; overflow-y:visible; display:flex; flex-direction:column; gap:4px; margin:8px 0;"></div>
-                        <div style="margin-top:8px; display:flex; align-items:center;">
-                            <input id="ai-input" type="text" placeholder="Ask copilot and mention the agreement number, or concession ID in your question" maxlength="2000" style="width:calc(100% - 40px); padding:8px 12px; border:1px solid #D1D1D1; border-radius:8px; font-size:14px;">
-                            <button id="ai-send-btn" style="background:#0078D4; color:#fff; border:none; border-radius:8px; padding:8px 16px; font-size:16px; margin-left:8px; cursor:pointer; display:flex; align-items:center; justify-content:center;">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M3 17L17 10L3 3V8.5L12 10L3 11.5V17Z" fill="white"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div style="font-size:10px; color:#605E5C; margin-top:8px;">AI-generated content can have mistakes, so don't forget to make sure it's accurate and appropriate.</div>
-                </div>
+                <!-- Start with a clean sheet and only suggestions -->
+            </div>
+            <!-- Input area for user messages -->
+            <div class="ai-input-area">
+                <input id="ai-input" class="ai-input" type="text" placeholder="Type your message..." autocomplete="off" />
+                <button id="ai-send-btn" class="ai-send-btn" aria-label="Send">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M3 17L17 10L3 3V8L13 10L3 12V17Z" fill="white"/>
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
@@ -338,12 +298,16 @@
             'explain current licensing position': 'The current licensing position is aligned with the customer’s requirements.',
             'default': 'Thank you for your message. I will get back to you soon!'
         };
-        function addMessage(text, sender) {
+        function addMessage(text, sender, isHtml = false) {
             const msgDiv = document.createElement('div');
             msgDiv.className = sender === 'user' ? 'ai-message-user' : 'ai-message-bot';
-            msgDiv.textContent = text;
-            document.getElementById('ai-messages').appendChild(msgDiv);
-            document.getElementById('ai-messages').scrollTop = document.getElementById('ai-messages').scrollHeight;
+            if (isHtml) {
+                msgDiv.innerHTML = text;
+            } else {
+                msgDiv.textContent = text;
+            }
+            document.getElementById('ai-chat-area').appendChild(msgDiv);
+            document.getElementById('ai-chat-area').scrollTop = document.getElementById('ai-chat-area').scrollHeight;
         }
         function aiSendMessage(event) {
             if(event) event.preventDefault();
@@ -351,19 +315,156 @@
             const userMsg = input.value.trim();
             if (!userMsg) return false;
             addMessage(userMsg, 'user');
-            setTimeout(() => {
-                const key = userMsg.toLowerCase().replace(/[^a-z ]/g, '').trim();
-                addMessage(botResponses[key] || botResponses['default'], 'bot');
-            }, 500);
             input.value = '';
+            // Remove static chat if present
+            if (window.__staticChatCleared !== true) {
+                document.getElementById('ai-chat-area').innerHTML = '';
+                window.__staticChatCleared = true;
+            }
+            // Agentic flow branching
+            const lower = userMsg.toLowerCase();
+            if (/renewal request.*contoso ltd/.test(lower)) {
+                setTimeout(() => {
+                    addMessage('Of course!', 'bot');
+                    setTimeout(() => {
+                        addMessage('<span>🔍 Fetching Contoso’s last active agreement…</span> <span class="ai-loader" style="display:inline-block; width:16px; height:16px; border:2px solid #C7E0F4; border-top:2px solid #0078D4; border-radius:50%; animation: spin 1s linear infinite;"></span>', 'bot', true);
+                        setTimeout(() => {
+                            addMessage('✅ Found agreement signed on Jan 15, 2024.<br>Here’s what we have:<ul style="margin:8px 0 0 16px; padding:0; color:#323130; font-size:14px;"><li><b>Company:</b> Contoso Ltd.</li><li><b>Affiliates:</b> Contoso Europe Ltd.</li><li><b>Tenants:</b> CONTOSO-001, CONTOSO-002</li><li><b>SA Benefits:</b> Active</li><li><b>Contract Type:</b> Customer-ready</li></ul><div style="margin:8px 0 0 0; color:#B40000; font-size:14px;">⚠️ <b>Missing:</b><ul style="margin:4px 0 0 16px; padding:0; color:#B40000;"><li>Notices Contact</li><li>SA Benefits Transfer Preference</li><li>MSDN Transfer Preference</li></ul></div>Would you like to generate a customer form to fill the missing info?', 'bot', true);
+                            showSuggestions([
+                                'Generate customer form',
+                                'Show agreement summary',
+                                'Add missing contacts'
+                            ]);
+                        }, 1500);
+                    }, 600);
+                }, 400);
+                return false;
+            }
+            if (/generate customer form/i.test(lower)) {
+                setTimeout(() => {
+                    addMessage('<span style="display:flex;align-items:center;gap:6px;"><span style="font-size:18px;">📄</span>Generated pre-filled <b>Excel</b> form with missing fields clearly marked.</span>\n<span style="display:flex;align-items:center;gap:6px;"><span style="font-size:18px;">📧</span>Here’s a draft email you can send:</span>\n<div style="background:#F3F2F1; border-radius:6px; padding:8px 12px; margin:8px 0; font-family:monospace; font-size:13px; color:#323130;">Hi [Customer Name],<br>We’re preparing your upcoming renewal. Please find the attached form with pre-filled information. Kindly review and fill in any missing details (highlighted in yellow).<br>Let us know if you have any questions!<br><i>Best, [Your Name]</i></div>Would you like me to send this via Outlook?', 'bot', true);
+                    showSuggestions([
+                        "Yes, please send with my name as 'X'",
+                        'No, I will send manually',
+                        'Show agreement summary'
+                    ]);
+                }, 600);
+                return false;
+            }
+            if (/send with my name as/i.test(lower)) {
+                setTimeout(() => {
+                    addMessage('Sent with your name as specified. Please upload the updated Excel from the customer when ready.', 'bot');
+                    showSuggestions([
+                        'Got the updated Excel from the customer. Can you check if it’s complete? [attaches excel]',
+                        'Show agreement summary',
+                        'Add missing contacts'
+                    ]);
+                }, 600);
+                return false;
+            }
+            if (/got the updated excel/i.test(lower)) {
+                setTimeout(() => {
+                    addMessage('✅ All required information received. We’re ready to generate the draft package. Want me to proceed?', 'bot');
+                    showSuggestions([
+                        'Yes, go ahead.',
+                        'Show agreement summary',
+                        'Add missing contacts'
+                    ]);
+                }, 600);
+                return false;
+            }
+            if (/yes, go ahead/i.test(lower)) {
+                setTimeout(() => {
+                    addMessage('<span style="font-size:18px;">📦</span> Draft contract package created based on validated data.<br>Key details:<ul style="margin:8px 0 0 16px; padding:0; color:#323130; font-size:14px;"><li>Enterprise Renewal</li><li>All required contacts added</li></ul>Can you share the CPS Proposal ID?', 'bot', true);
+                    showSuggestions([
+                        "I don't have it yet.",
+                        'CPS: 12312.001',
+                        'Show agreement summary'
+                    ]);
+                }, 600);
+                return false;
+            }
+            if (/i don't have it yet/i.test(lower)) {
+                setTimeout(() => {
+                    addMessage('No worries, generating a package without CPS …<br>The package is now ready, do you want to make any changes?', 'bot', true);
+                    showSuggestions([
+                        'Can you add John who is the primary contact also as Notices contact',
+                        'No changes, proceed',
+                        'Show agreement summary'
+                    ]);
+                }, 600);
+                return false;
+            }
+            if (/can you add john/i.test(lower)) {
+                setTimeout(() => {
+                    addMessage('I have added John as the notices contact too. We still have CPS missing for the package to be submitted.', 'bot');
+                    showSuggestions([
+                        'CPS: 12312.001',
+                        'Show agreement summary',
+                        'Add missing contacts'
+                    ]);
+                }, 600);
+                return false;
+            }
+            if (/cps: ?\d+/i.test(lower)) {
+                setTimeout(() => {
+                    addMessage('Linking the CPS-&gt; Linked. Our package is now ready to be sent for signature with no errors.', 'bot', true);
+                    showSuggestions([
+                        'submit for signature using adobe sign',
+                        'Show agreement summary',
+                        'Add missing contacts'
+                    ]);
+                }, 600);
+                return false;
+            }
+            if (/submit for signature/i.test(lower)) {
+                setTimeout(() => {
+                    addMessage('<span style="font-size:18px;">🎉</span> Submitted! Your renewal request for Contoso Ltd. is now submitted for signature<br>Need help with anything else?', 'bot', true);
+                    showSuggestions([
+                        'No, thank you',
+                        'Show agreement summary',
+                        'Add missing contacts'
+                    ]);
+                }, 600);
+                return false;
+            }
+            // fallback
+            setTimeout(() => {
+                addMessage('Thank you for your message. I will get back to you soon!', 'bot');
+            }, 500);
             return false;
         }
-        function aiQuickReply(text) {
-            addMessage(text, 'user');
-            setTimeout(() => {
-                const key = text.toLowerCase().replace(/[^a-z ]/g, '').trim();
-                addMessage(botResponses[key] || botResponses['default'], 'bot');
-            }, 500);
+        // On load, show only suggestions for the first expected user input
+        window.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('ai-chat-area').innerHTML = '';
+            showSuggestions([
+                'Hey, I need to prepare a renewal request for Contoso Ltd. Can you help?',
+                'Show me the latest agreements',
+                'What is the weather today?'
+            ]);
+        });
+        function showSuggestions(suggestions) {
+            let existing = document.getElementById('ai-suggestions');
+            if (existing) existing.remove();
+            const actionsDiv = document.createElement('div');
+            actionsDiv.className = 'ai-actions';
+            actionsDiv.id = 'ai-suggestions';
+            suggestions.forEach((text, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'ai-action-btn';
+                btn.textContent = text;
+                btn.onclick = () => {
+                    addMessage(text, 'user');
+                    actionsDiv.remove();
+                    // Only trigger agentic flow for the expected suggestion
+                    if (idx === 0) {
+                        aiSendMessage({preventDefault:()=>{}});
+                    }
+                };
+                actionsDiv.appendChild(btn);
+            });
+            document.getElementById('ai-chat-area').appendChild(actionsDiv);
+            actionsDiv.scrollIntoView({behavior:'smooth', block:'end'});
         }
         document.getElementById('ai-send-btn').onclick = aiSendMessage;
         document.getElementById('ai-input').addEventListener('keydown', function(e) {
@@ -372,6 +473,7 @@
         // Show/hide chatbot panel
         document.getElementById('ai-chatbot-icon').onclick = function() {
             document.getElementById('ai-chatbot-panel').style.display = 'flex';
+            document.getElementById('ai-chatbot-panel').style.flexDirection = 'column';
             document.getElementById('ai-chatbot-icon').style.display = 'none';
         };
         document.getElementById('ai-close-btn').onclick = function() {
