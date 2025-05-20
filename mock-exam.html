@@ -16,10 +16,11 @@
             position: fixed;
             left: 50%;
             transform: translateX(-50%);
-            bottom: 120px;
+            bottom: 40px;
             z-index: 1001;
             width: 585px;
-            height: 849px;
+            height: 80vh;
+            max-height: 80vh;
             background: #FAF9F8;
             box-shadow: 0px 4.8px 14.4px rgba(0,0,0,0.18), 0px 25.6px 57.6px rgba(0,0,0,0.22);
             border-radius: 8px;
@@ -58,7 +59,18 @@
             padding: 0 16px 0 16px;
             overflow-y: auto;
             min-height: 0;
-            max-height: 650px;
+            scrollbar-width: thin;
+            scrollbar-color: #C7E0F4 #FAF9F8;
+        }
+        .ai-main::-webkit-scrollbar {
+            width: 8px;
+        }
+        .ai-main::-webkit-scrollbar-thumb {
+            background: #C7E0F4;
+            border-radius: 4px;
+        }
+        .ai-main::-webkit-scrollbar-track {
+            background: #FAF9F8;
         }
         .ai-chat-area {
             display: flex;
@@ -121,6 +133,9 @@
             font-size: 16px;
             margin-left: 8px;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .ai-action-btn {
             background: #fff;
@@ -162,6 +177,10 @@
             box-shadow: 0px 0.3px 0.9px rgba(0,0,0,0.1), 0px 1.6px 3.6px rgba(0,0,0,0.13);
         }
         #ai-messages {
+            flex: 1 1 auto;
+            min-height: 0;
+            max-height: none;
+            overflow-y: visible;
             display: flex;
             flex-direction: column;
             gap: 4px;
@@ -241,10 +260,16 @@
                         <button class="ai-action-btn" onclick="aiQuickReply('Show revenue details')">Show revenue details</button>
                         <button class="ai-action-btn" onclick="aiQuickReply('Explain current licensing position')">Explain current licensing position</button>
                     </div>
-                    <div id="ai-messages"></div>
-                    <div style="margin-top:8px; display:flex; align-items:center;">
-                        <input id="ai-input" type="text" placeholder="Ask copilot and mention the agreement number, or concession ID in your question" maxlength="2000" style="width:calc(100% - 40px); padding:8px 12px; border:1px solid #D1D1D1; border-radius:8px; font-size:14px;">
-                        <button id="ai-send-btn" style="background:#0078D4; color:#fff; border:none; border-radius:8px; padding:8px 16px; font-size:16px; margin-left:8px; cursor:pointer;">&#xE72A;</button>
+                    <div style="display:flex; flex-direction:column; flex:1 1 auto; min-height:0;">
+                        <div id="ai-messages" style="flex:1 1 auto; min-height:0; max-height:none; overflow-y:visible; display:flex; flex-direction:column; gap:4px; margin:8px 0;"></div>
+                        <div style="margin-top:8px; display:flex; align-items:center;">
+                            <input id="ai-input" type="text" placeholder="Ask copilot and mention the agreement number, or concession ID in your question" maxlength="2000" style="width:calc(100% - 40px); padding:8px 12px; border:1px solid #D1D1D1; border-radius:8px; font-size:14px;">
+                            <button id="ai-send-btn" style="background:#0078D4; color:#fff; border:none; border-radius:8px; padding:8px 16px; font-size:16px; margin-left:8px; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 17L17 10L3 3V8.5L12 10L3 11.5V17Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <div style="font-size:10px; color:#605E5C; margin-top:8px;">AI-generated content can have mistakes, so don't forget to make sure it's accurate and appropriate.</div>
                 </div>
@@ -292,6 +317,10 @@
             box-shadow: 0px 0.3px 0.9px rgba(0,0,0,0.1), 0px 1.6px 3.6px rgba(0,0,0,0.13);
         }
         #ai-messages {
+            flex: 1 1 auto;
+            min-height: 0;
+            max-height: none;
+            overflow-y: visible;
             display: flex;
             flex-direction: column;
             gap: 4px;
